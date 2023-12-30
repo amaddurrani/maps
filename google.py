@@ -74,10 +74,10 @@ if selected_page=='Location Details':
             key="location-csv",
         )
 
-        # Display the total distance and duration
-        st.subheader("Total Distance and Duration:")
-        st.write(f"Total Distance: {total_distance / 1000:.2f} KM")
-        st.write(f"Total Duration: {str(total_duration)}")
+        # # Display the total distance and duration
+        # st.subheader("Total Distance and Duration:")
+        # st.write(f"Total Distance: {total_distance / 1000:.2f} KM")
+        # st.write(f"Total Duration: {str(total_duration)}")
 else:
     upload_file= st.file_uploader("Choose File", type='csv')
     if upload_file is not None:
