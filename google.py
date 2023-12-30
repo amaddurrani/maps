@@ -29,7 +29,7 @@ if selected_page=='Location Details':
 
         # Create a Folium map
         map_center = [(data['lat'][0] + data['lat'].iloc[-1]) / 2, (data['lon'][0] + data['lon'].iloc[-1]) / 2]
-        map_obj = folium.Map(location=map_center, zoom_start=9)
+        map_obj = folium.Map(location=map_center, zoom_start=10)
 
         # Iterate over each row in the DataFrame
         for index, row in data.iterrows():
